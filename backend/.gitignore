@@ -30,3 +30,4 @@ logs/
 # Optional build output
 dist/
 build/
+/src/generated/prisma
