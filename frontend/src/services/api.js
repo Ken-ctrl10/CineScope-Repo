@@ -14,12 +14,12 @@ api.interceptors.request.use((config) => {
 });
 
 // Authentication Functions
-export const register = (email, password) => 
-  api.post()("/auth/register", { email, password });
+export const register = (email, pass, name) =>
+  api.post("/auth/register", { email, pass, name });
 
-export const login = (email, password) => 
-  api.post("/auth/login", { email, password });
+export const login = (email, pass) =>
+  api.post("/auth/login", { email, pass });
 
 export const getUserProfile = () => api.get("/auth/me");
 
-export { api };
+export default api;
